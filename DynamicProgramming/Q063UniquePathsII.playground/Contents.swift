@@ -40,7 +40,7 @@ func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {
     
     let numberOfRows = obstacleGrid.count
     let numberOfColums = obstacleGrid[0].count
-    // extra 1 added to n and m means add an extra top row and left column to make calculation easier
+
    var pathsToPosition = [[Int]](repeating: [Int](repeating: 0, count: numberOfColums + 1), count: numberOfRows + 1)
     print(pathsToPosition)
     
