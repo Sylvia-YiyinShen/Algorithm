@@ -8,6 +8,17 @@ extension String {
 
 print("1234"[0])
 
+// unicode
+
+func getNumIndex(char: Character) -> Int {
+    return Int(getUnicodeValue(char: char) - getUnicodeValue(char: "A"))
+}
+
+func getUnicodeValue(char: Character) -> UInt32 {
+    let scalars = char.unicodeScalars
+    return scalars[scalars.startIndex].value
+}
+
 // bit manipulation helper functions
 func pad(string : String, toSize: Int = 8) -> String {
     var padded = string
