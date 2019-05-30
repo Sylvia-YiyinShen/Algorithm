@@ -75,4 +75,3 @@ headNode.next = secondNode
 secondNode.next = thirdNode
 thirdNode.next = fouthNode
 
-print(isPalindrome(headNode))
