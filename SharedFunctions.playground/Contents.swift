@@ -9,7 +9,7 @@ extension String {
     }
 }
 
-print("1234"[0])
+print("1234"[0...1]) // print "12"
 
 // unicode
 
