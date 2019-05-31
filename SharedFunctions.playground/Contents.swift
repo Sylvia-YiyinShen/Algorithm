@@ -4,6 +4,9 @@ extension String {
     subscript (i: Int) -> Character {
         return self[index(startIndex, offsetBy: i)]
     }
+    subscript(range: ClosedRange<Int>) -> String {
+        return String(self[index(startIndex, offsetBy: range.lowerBound)...index(startIndex, offsetBy: range.upperBound)])
+    }
 }
 
 print("1234"[0])
